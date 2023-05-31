@@ -8,20 +8,6 @@ import os
 import pickle
 
 
-def read_config():
-    # Read the properties from the file
-    with open('resources//properties.txt', 'r') as file:
-        properties = {}
-        for line in file:
-            line = line.strip()  # Remove leading/trailing whitespace
-            if line:  # Skip empty lines
-                key, value = line.split('=')
-                properties[key.strip()] = value.strip()
-    return properties
-
-
-properties = read_config()
-
 model_class, tokenizer_class, pretrained_weights = (
     transformers.DistilBertModel,
     transformers.DistilBertTokenizer,
