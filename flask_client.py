@@ -21,5 +21,5 @@ def client_program():
 
 
 if __name__ == '__main__':
-    url = 'http://localhost:5000/process'
+    url = 'http://127.255.253.2:5000/process'
     client_program()

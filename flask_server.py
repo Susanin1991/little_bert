@@ -1,6 +1,5 @@
 import os
 import sys
-import socket
 import transformers
 import numpy
 import torch
