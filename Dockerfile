@@ -11,7 +11,7 @@ COPY . /opt/ml/code
 RUN pip install -r requirements.txt
 
 # Set the entry point to the training script
-ENV SAGEMAKER_PROGRAM distil_bert.py
+ENV SAGEMAKER_PROGRAM flask_server.py
 
 # Set the command to run the training script
-CMD ["python", "-u", "distil_bert.py"]
+CMD ["python", "-u", "flask_server.py"]
